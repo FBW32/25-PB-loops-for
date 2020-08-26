@@ -296,7 +296,6 @@ for (let i = 0; i <= 5; i++) {
 // bosus4 is 9
 // bosus4 is 12
 // bosus4 is 15
-
 // 9 8 7 6 5 4 3 2 1 0
 /* let bonus5;
 for (let i = 9; i >= 0; i--) {
