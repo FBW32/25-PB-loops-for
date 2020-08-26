@@ -3,19 +3,29 @@
 
 // Addition. Write a program to add up the numbers 1 to 20.
 let num1 = 0;
-for (let i = 1; i <= 10; i++) {
-    num1 = i;
+for (let i = 1; i <= 20; i++) {
+    num1 = num1 + i;
     console.log(num1);
     /*1
-    2
-    3
-    4
-    5
-    6
-    7
-    8
-    9
-    10 */
+3
+6
+10
+15
+21
+28
+36
+45
+55
+66
+78
+91
+105
+120
+136
+153
+171
+190
+210 */
 }
 
 // There are i bottles of beer on the wall. Write a program that will output, "There is one bottle of beer on the wall." "There are two bottles of beer on the wall" up until there are five bottles.
