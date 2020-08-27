@@ -117,6 +117,7 @@ for (let i = 100; i <= 1000; i += 100) {
 let num2 = "";
 for (let i = 1; i <= 128; i *= 2) {
     num2 += i + " ";
+   // console.log(num2);
   }
 console.log(num2); // 1 2 4 8 16 32 64 128 
 
@@ -148,7 +149,7 @@ console.log(num6);  // 1 1 1 2 2 2 3 3 3 4 4 4
 
 let num7 = "";
 for (let g = 0; g < 3; g++) {
-    for (i = 0; i <= 4; i++) {
+    for (let i = 0; i <= 4; i++) {
         num7 += i + " ";
     }
   }
@@ -156,20 +157,14 @@ console.log(num7);  // 0 1 2 3 4 0 1 2 3 4 0 1 2 3 4
 
 /* 8. isPalindrome. Write a program to check whether a word is a palindrome or not. Note: a palindrome is a word, phrase, or sequence that reads the same backwards as forwards, e.g. madam or tarrattarrat */
 let myString = "madam";
-//let changeString = myString.toLowerCase().replace(/[^a-zA-Z0-9]+/g,'');
-let count = myString.length;
-for (let i = 0; i < count; i++) {
-       if (myString[i] !== myString.slice(-1-i)[0]) {
-        console.log("Word is not a palindrome");
-        
+let palindrome = [];
+
+for (let i = 0; i < myString.length; i++) {
+    palindrome = myString.split("").reverse("").join("");
+    if(myString === palindrome) {
+        answer1 = `${myString} is a palindrome `;
     } else {
-        console.log("word is palindrome");
+        answer1 = `${myString} is not a palindrome `;
     }
 }
-/*
-    word is palindrome
-    word is palindrome
-    word is palindrome
-    word is palindrome
-    word is palindrome
-*/
+console.log(answer1); // madam is a palindrome 
