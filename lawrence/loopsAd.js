@@ -167,15 +167,60 @@ console.log(linF2); // 100 200 300 400 500 600 700 800 900 1000
 
 
 let linF3 = "";
-let count = 8;
-let sumCount = 0;
+//let count = 8;
+//let sumCount = 0;
 
-for (let i = 0; i <= count; i++){
-    
-    sumCount = sumCount + i * 2;
-
-    linF3+= sumCount + " "
+for (let i = 1; i <= 128; i*= 2){  
+   
+   linF3+= i + " "; 
 }
-console.log(linF3);
+
+console.log(linF3);   // 1 2 4 8 16 32 64 128 
+
+
+let linF4 = "";
+for (let i = 3; i <= 15; i+= 3){  
+   
+    linF4+= i + " "; 
+} 
+
+console.log(linF4);  // 3 6 9 12 15 
+
+
+let linF5 = "";
+
+for (let i = 0; i <= 10; i+= 2){
+    num1 = i;
+    linF5+= num1 + " ";
+}
+console.log(linF5);  //  0 2 4 6 8 10 
+
+let linF6 = "";
+
+for ( let i = 0; i <=4; i++){
+    
+    for ( let x = 0; x < 3; x++){
+    
+        linF6 += i + " ";
+
+}
+}
+ console.log(linF6); // 0 0 0 1 1 1 2 2 2 3 3 3 4 4 4 
 
 //8. **isPalindrome.**
+
+let wordSt = "katatak";
+let paladWord = [];
+
+for ( let i = 0; i < wordSt.length; i++){
+    palidWord = wordSt.split("").reverse("").join("");
+
+    if ( palidWord === wordSt) {
+        wordCheck = `${wordSt} ,is a palindrome`;
+    } else {
+        `${wordSt} ,is not a palindrome`;
+    } 
+    
+}
+console.log(wordCheck);  
+//katatak ,is a palindrome  
