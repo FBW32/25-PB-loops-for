@@ -6,10 +6,13 @@ for (let i = 0; i < 20; i++) {
 }
 
 //2
-for (let bottle = 1; bottle <= 5; bottle++) {
-  console.log(`there is ${bottle} of beer in the wall`);
+for (let i = 1; i <= 5; i++) {
+  if (i == 1) {
+    console.log(`There is ${i} bottle of beer on the wall.`);
+  } else {
+    console.log(`There are ${i} bottles of beer on the wall.`);
+  }
 }
-
 //3
 for (let ev = 0; ev <= 20; ev++) {
   if (ev % 2 == 0) {
