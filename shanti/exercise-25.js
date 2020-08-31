@@ -10,8 +10,11 @@ console.log(`Addition of numbers from 1 to 20 is  ${add}`); // Addition of numbe
 /* 2. There are i bottles of beer on the wall. Write a program that will output, "There is one bottle of beer on the wall." "There are two bottles of beer on the wall" up until there are five bottles. */
 let text = "";
 for (let i = 1; i <= 5; i++) {
-    text += `There are ${i} bottles of beer on the wall.`;
-    
+    if (i === 1) {
+        text += `There is ${i} bottle of beer on the wall.`; 
+    } else {
+        text += `There are ${i} bottles of beer on the wall.`;
+    }
 }
 console.log(text);
 // There are 1 bottles of beer on the wall.There are 2 bottles of beer on the wall.There are 3 bottles of beer on the wall.There are 4 bottles of beer on the wall.There are 5 bottles of beer on the wall.
