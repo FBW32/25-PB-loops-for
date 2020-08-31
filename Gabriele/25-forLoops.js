@@ -10,10 +10,15 @@ for (let i = 1; i <= 20; i++) {
 // Write a program that will output, "There is one bottle of beer on the wall." "There are two bottles of beer on the wall" up until there are five bottles.
 
 
-let beerBot = 1;
-for (i = 1; i <= 5; i++) {
-    beerBot = i;
-   console.log(`2. There are ${beerBot} bottles of beer on the wall`);
+let beerBot = 0;
+for (i = 0; i < 5; i++) {
+    if (beerBot <= i) {
+        beerBot++;
+        console.log(`2. There are ${beerBot} bottles of beer on the wall`)
+
+    }
+//     beerBot = i;
+//    console.log(`2. There are ${beerBot} bottles of beer on the wall`);
 }; 
 console.log(`There are ${beerBot} bottles of beer on the wall`);
 
